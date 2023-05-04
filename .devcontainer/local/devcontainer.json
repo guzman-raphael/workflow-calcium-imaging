@@ -9,7 +9,7 @@
 		"LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
 	},
 	// https://containers.dev/features
-	"onCreateCommand": "pip install -e . && MYSQL_VER=8.0 docker compose down && MYSQL_VER=8.0 docker compose up --build --wait",
+	"onCreateCommand": "pip install -e . && MYSQL_VER=8.0 docker compose down && MYSQL_VER=8.0 docker compose up --build",
 	"postStartCommand": "docker volume prune -f",
 	"hostRequirements": {
 		"cpus": 4,
